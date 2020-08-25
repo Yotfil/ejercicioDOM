@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./style2.css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap" rel="stylesheet" />
+        <title>Taller 2.1</title>
+    </head>
+
+    <body>
+        <main class="main">
+            <div class="col1">
+                <div class="user">
+                    <a class="linkProfile" href="#">
+                        <img src="./img/boy.svg" alt="Foto de Perfíl" class="userImg" />
+                    </a>
+                    <p class="welcome">Bienvenido</p>
+                    <p class="userName">Jefry</p>
+                </div>
+                <div class="newList">
+                    <button id="btnTask" class="btnList">
+                        Añadir nueva lista
+                    </button>
+                    <div class="containterItemList">
+                        <ul id="taskList" class="itemLists"></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="containerTitle">
+                    <h1 class="title">Lista de Tareas del Bootcamp</h1>
+                </div>
+                <div class="containerInput">
+                    <input type="text" id="inputList" class="input" />
+                    <button id="btnList" class="btnList">Añadir Tarea</button>
+                </div>
+                <div class="listPendientes">
+                    <h3 class="titlePendientes">Mis Tareas Pendientes</h3>
+                    <div class="containerListPendientes">
+                        <ul id="list" class="itemPendientes"></ul>
+                    </div>
+                </div>
+                <div class="containerNote">
+                    <p class="note">
+                        *Para marcar un item como hecho haz un click, para
+                        eliminarlo completamente haz doble click
+                    </p>
+                </div>
+            </div>
+            <div class="divArrow">
+                <a class="arrow" href="index.html">
+                    <p class="txtArrow">Volver</p>
+                    <img src="./img/arrow-back.png" alt="Flecha" class="imgArrow" />
+                </a>
+            </div>
+        </main>
+        <script src="script2.js"></script>
+    </body>
+
+</html>

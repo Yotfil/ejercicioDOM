@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Nunito", sans-serif;
+    max-width: 1100px;
+    margin: auto;
+    background: rgba(11, 1, 31, 1);
+    background: -moz-radial-gradient(
+        center,
+        ellipse cover,
+        rgba(11, 1, 31, 1) 0%,
+        rgba(20, 0, 51, 1) 100%
+    );
+    background: -webkit-gradient(
+        radial,
+        center center,
+        0px,
+        center center,
+        100%,
+        color-stop(0%, rgba(11, 1, 31, 1)),
+        color-stop(100%, rgba(20, 0, 51, 1))
+    );
+    background: -webkit-radial-gradient(
+        center,
+        ellipse cover,
+        rgba(11, 1, 31, 1) 0%,
+        rgba(20, 0, 51, 1) 100%
+    );
+    background: -o-radial-gradient(
+        center,
+        ellipse cover,
+        rgba(11, 1, 31, 1) 0%,
+        rgba(20, 0, 51, 1) 100%
+    );
+    background: -ms-radial-gradient(
+        center,
+        ellipse cover,
+        rgba(11, 1, 31, 1) 0%,
+        rgba(20, 0, 51, 1) 100%
+    );
+    background: radial-gradient(
+        ellipse at center,
+        rgba(11, 1, 31, 1) 0%,
+        rgba(20, 0, 51, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b011f', endColorstr='#140033', GradientType=1 );
+}
+.title {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 60px;
+    background: rgba(0, 123, 150, 1);
+    background: -moz-linear-gradient(
+        left,
+        rgba(0, 123, 150, 1) 0%,
+        rgba(0, 150, 128, 1) 100%
+    );
+    background: -webkit-gradient(
+        left top,
+        right top,
+        color-stop(0%, rgba(0, 123, 150, 1)),
+        color-stop(100%, rgba(0, 150, 128, 1))
+    );
+    background: -webkit-linear-gradient(
+        left,
+        rgba(0, 123, 150, 1) 0%,
+        rgba(0, 150, 128, 1) 100%
+    );
+    background: linear-gradient(
+        to right,
+        rgba(0, 123, 150, 1) 0%,
+        rgba(0, 150, 128, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Si no se ve bien por el navegador borrar/comentar todas las lineas hasta donde empieza la clase ".title" */
+    width: 50%;
+    text-align: center;
+    color: #007b97;
+    margin: 50px auto 60px;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 70px;
+}
+.txtGeneral {
+    padding: 0 20px;
+    width: 70%;
+    margin-top: 40px;
+}
+.container {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.photo {
+    overflow: hidden;
+}
+.container img {
+    height: 230px;
+    width: 230px;
+    /* width: 100%; */
+    border-radius: 50%;
+    border-bottom: 1px solid #7b0074;
+    border-top: 1px solid #7b0074;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.photo:hover img {
+    border: 1px solid #7b0074;
+    transform: scale(0.98);
+    transition: all 0.3s;
+}
+.txtInt,
+.txtArrow {
+    color: #007b97;
+    font-size: 1.2rem;
+    line-height: 2;
+    font-weight: 200;
+}
+.datos-flex {
+    display: flex;
+}
+.marginItem {
+    margin-left: 10px;
+}
+.divArrow {
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+    width: auto;
+}
+.arrow {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.txtArrow {
+    font-weight: 600;
+    font-size: 12px;
+    margin-right: 20px;
+    order: 2;
+}
+.imgArrow {
+    width: 30px;
+}
